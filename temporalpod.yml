@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: temporalwebapp
+  labels: 
+    app: temporalwebapp
+spec:
+  containers: 
+   - name: temporalwebapp
+     image: 634892043057.dkr.ecr.us-west-1.amazonaws.com/wafitemporal:latest
+     ports: 
+      -containerPort: 8088
+      
